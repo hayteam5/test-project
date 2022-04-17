@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap');
+
+* {
+  font-family: 'Lora', serif;
+  }
+h1 {
+  padding: 0;
+  margin: 0;
+  color: darkslategray;
+}
+.subtext {
+  padding-top: 5px;
+  margin: 0;
+  font-size: 12px;
+  text-align: left;
+  font-style: normal;
+}
+
+.info {
+  border-bottom: solid;
+  border-color: darkgray;
+  padding: 20px 0;
+  margin: 20px 100px;
+  display: flex;
+  font-size: 14px;
+  color: dimgrey;
+}
+
+.info-bio {
+  padding: 0;
+  text-align: left;
+  max-width: 200px;
+}
+
+.info-contacts {
+  margin: auto;
+  padding: 10px 10px;
+
+}
+td {
+  padding-right: 20px;
+}
+
+.contact-right {
+  text-align: right;
+  color: darkslategrey;
+}
+
+.picture {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border-radius: 5%;
+}
+
+.education {
+  border-bottom: solid;
+  border-color: darkgray;
+  padding: 0 0;
+  margin: 0 100px 20px 100px;
+  display: flex;
+  font-size: 14px;
+  color: dimgrey;
+}
+
+.experience {
+  border-bottom: solid;
+  border-color: darkgray;
+  padding: 0 0;
+  margin: 0 100px 20px 100px;
+  display: flex;
+  font-size: 14px;
+  color: dimgrey;
+}
+
+.skills {
+  border-bottom: solid;
+  border-color: darkgray;
+  padding: 0 0;
+  margin: 0 100px 20px 100px;
+  display: flex;
+  font-size: 14px;
+  color: dimgrey;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.right-block {
+  padding: 0;
+  margin: 0;
+  width: 80%;
+}
+
+.left-block {
+  padding: 0;
+  margin-right: 10px;
+  width: 20%;
+}
+
+.right-block-head {
+  border-left: darkgray solid;
+  padding: 0 20px;
+  margin: 0 0 20px 10px;
+  width: 80%;
+  font-style: italic;
+}
+
+.right-block-head p {
+  font-style: normal;
+}
+
+
+.iprec {
+  border-left: darkgray solid;
+  padding: 0 20px;
+  margin: 0 0 10px 10px;
+  width: 75%;
+  font-style: italic;
+}
+
+.year {
+  text-align: right;
+  margin: 0;
+  padding: 5px 0;
+  width: 25%;
+  font-size: 12px;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.exp-text {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
