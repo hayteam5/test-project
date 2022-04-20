@@ -1,0 +1,144 @@
+<h1>Job Details:</h1>
+
+<form>
+  <table style="border: dotted 2px">
+    <tr>
+      <td style="border: dotted gray 2px; text-align: right; min-width: 160px">
+        <label for="job-title">Job title:</label>
+      </td>
+      <td style="border: dotted gray 2px; min-width: 450px">
+        <input type="text" id="job-title">
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: dotted gray 2px; text-align: right">
+        <label for="description">Description:</label>
+      </td>
+      <td style="border: dotted gray 2px">
+        <textarea id="description" maxlength="500"></textarea>
+        <p style="margin-bottom: 0">Brief Description should have atmost 500 characters</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: dotted gray 2px; text-align: right">
+        <label for="company-name">Company name:</label>
+      </td>
+      <td style="border: dotted gray 2px">
+        <input type="text" id="company-name">
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: dotted gray 2px; text-align: right">
+        <label for="contact-number">Contact number:</label>
+      </td>
+      <td style="border: dotted gray 2px">
+        <input type="tel" id="contact-number">
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: dotted gray 2px; text-align: right">
+        <label for="contact-person">Contact person:</label>
+      </td>
+      <td style="border: dotted gray 2px">
+        <input type="text" id="contact-person">
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: dotted gray 2px; text-align: right">
+        <label for="email">Email:</label>
+      </td>
+      <td style="border: dotted gray 2px">
+        <input type="email" id="email">
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: dotted gray 2px; text-align: right">
+        <span>Work status:</span>
+      </td>
+      <td style="border: dotted gray 2px">
+        <input type="checkbox" name="full-name" id="full-name">
+        <label for="full-name">Full name</label>
+        <input type="checkbox" name="Part time" id="part-time">
+        <label for="part-time">Part time</label>
+        <input type="checkbox" name="Per dim" id="per-dim">
+        <label for="per-dim">Per dim</label>
+        <input type="checkbox" name="Others" id="others">
+        <label for="others">Others</label>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: dotted gray 2px; text-align: right">
+        <label for="salary">Salary:</label>
+      </td>
+      <td style="border: dotted gray 2px">
+        <input type="email" id="salary">
+        <select name="currency" id="currency">
+          <option value="dollar">US Dollar</option>
+          <option value="euro">Euro</option>
+          <option value="dram">Dram</option>
+          <option value="rubli">Rubli</option>
+        </select>
+        <select name="interval" id="interval">
+          <option value="yearly">Yearly</option>
+          <option value="monthly">Monthly</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: dotted gray 2px; text-align: right">
+        <label for="experience">Experience(years):</label>
+      </td>
+      <td style="border: dotted gray 2px">
+        <input type="number" id="experience">
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: dotted gray 2px; text-align: right">
+        <label for="location">Locations:</label>
+      </td>
+      <td style="border: dotted gray 2px">
+        <input type="text" id="location">
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: dotted gray 2px; text-align: right">
+        <span>Qualifications:</span>
+      </td>
+      <td style="border: dotted gray 2px">
+        <select name="qualifications" id="qualifications" multiple size="4">
+          <option value="any">Any</option>
+          <option value="high School">High School</option>
+          <option value="associate">Associate</option>
+          <option value="pre-bachelors">Pre Bachelors</option>
+        </select>
+        <button name="add"> ADD >> </button>
+        <button name="remove"><< Remove</button>
+        <select name="qualifications" multiple size="4">
+          <option value="any">Any</option>
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+    <td style="border: dotted gray 2px; text-align: right">
+      <button type="submit" name="submit">Submit</button>
+    </td>
+    <td style="border: dotted gray 2px">
+      <button type="reset" name="reset">Reset</button>
+    </td>
+  </tr>
+  </table>
+</form>
