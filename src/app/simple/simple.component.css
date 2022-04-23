@@ -106,3 +106,7 @@ body {
   border: none;
   box-shadow: 0 0 20px 3px;
 }
+
+.info button:hover {
+  background: linear-gradient(180deg, rgba(209, 225, 136, 1) 10%, rgba(184, 198, 119, 1) 50%);
+}
