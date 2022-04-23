@@ -6,6 +6,7 @@ import { CvComponent } from './cv/cv.component';
 import { JobDetailsComponent } from './job-details/job-details.component';
 import { OrderComponent } from './order/order.component';
 import { MapComponent } from './map/map.component';
+import { SimpleComponent } from './simple/simple.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { MapComponent } from './map/map.component';
     CvComponent,
     JobDetailsComponent,
     OrderComponent,
-    MapComponent
+    MapComponent,
+    SimpleComponent
   ],
   imports: [
     BrowserModule
