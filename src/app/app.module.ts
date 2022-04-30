@@ -7,6 +7,7 @@ import { JobDetailsComponent } from './job-details/job-details.component';
 import { OrderComponent } from './order/order.component';
 import { MapComponent } from './map/map.component';
 import { SimpleComponent } from './simple/simple.component';
+import { BurgerComponent } from './burger/burger.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { SimpleComponent } from './simple/simple.component';
     JobDetailsComponent,
     OrderComponent,
     MapComponent,
-    SimpleComponent
+    SimpleComponent,
+    BurgerComponent
   ],
   imports: [
     BrowserModule
