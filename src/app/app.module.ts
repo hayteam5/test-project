@@ -8,6 +8,8 @@ import { OrderComponent } from './order/order.component';
 import { MapComponent } from './map/map.component';
 import { SimpleComponent } from './simple/simple.component';
 import { BurgerComponent } from './burger/burger.component';
+import { Burger2Component } from './burger2/burger2.component';
+import { Burger3Component } from './burger3/burger3.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { BurgerComponent } from './burger/burger.component';
     OrderComponent,
     MapComponent,
     SimpleComponent,
-    BurgerComponent
+    BurgerComponent,
+    Burger2Component,
+    Burger3Component
   ],
   imports: [
     BrowserModule

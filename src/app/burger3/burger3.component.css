@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+* {
+  font-family: Nunito, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 860px;
+  min-width: 1440px;
+}
+
+.head {
+  display: flex;
+  max-width: 1440px;
+  max-height: 80px;
+  padding: 12px 165px;
+  border-bottom: 2px solid #EDEEF2;
+  margin: 0;
+}
+
+.logo {
+  margin-right: 48px;
+}
+
+.input-wrapper {
+  position: relative;
+  padding: 0;
+  margin: 0 360px 0 0;
+  height: 40px;
+
+}
+
+.search {
+  border-radius: 12px;
+  height: 40px;
+  width: 224px;
+  border: none;
+  background: #EDEEF2;
+  padding: 0 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #83859C
+}
+
+.input-wrapper img {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  margin: auto;
+  size: auto;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 0;
+}
+
+.navigation a {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2B2B43;
+  text-decoration: none;
+  margin: 0;
+}
+
+.restaurant {
+  padding-right: 8px;
+}
+
+.deals {
+  padding: 0 20px;
+  border-right: 2px solid #EDEEF2;
+}
+
+.order {
+  padding: 0 20px;
+}
+
+.shop {
+  width: 48px;
+  height: 48px;
+  background: #4E60FF;
+  min-width: 48px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  background: #4E60FF;
+}
+
+.shop {
+  position: relative;
+  display: inline-flex;
+  background: #F3F4FF;
+  border-radius: 16px;
+  height: 48px;
+  width: 48px;
+  margin-right: 16px;
+}
+
+.shop img {
+  margin: auto;
+}
+
+.counter {
+  position: absolute;
+  padding-left: 35px;
+}
+
+.avatar {
+  display: inline-flex;
+  background: #F3F4FF;
+  border-radius: 16px;
+  height: 52px;
+  width: 52px;
+}
+
+.avatar img {
+  border-radius: 16px;
+  height: 46px;
+  width: 46px;
+  margin: auto;
+}
+
+.main {
+  display: grid;
+  grid-template: 1fr / 2fr;
+}
+
+.settings {
+  position: absolute;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-gap: 12px;
+  grid-template: 1fr 2fr 2fr 2fr 2fr / 1fr;
+  padding: 24px 12px 0 165px;
+
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2B2B43;
+}
+
+.panel {
+  display: grid;
+  grid-template: 1fr / 1fr 4fr;
+  border: 1px solid #EDEEF2;
+  box-sizing: border-box;
+  border-radius: 16px;
+  height: 72px;
+  width: 350px;
+}
+
+.panel:hover {
+  background: #F3F4FF;
+  border: 1px solid #4E60FF;
+}
+
+.panel:focus {
+  background: #F3F4FF;
+  border: 2px solid #4E60FF;
+}
+
+.panel img  {
+  grid-column:  1 / 2;
+  grid-row: 1 / 2;
+}
+
+.info {
+  grid-column:  2 / 3;
+  grid-row: 1 / 2;
+  align-self: center;
+}
+
+.icon {
+ margin: auto;
+  width: 40px;
+  height: 40px;
+}
+
+.account {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.account h2 {
+  margin: 26px 0 16px 0;
+}
+
+.account-container h2 {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.account-container {
+  border: 1px solid #EDEEF2;
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 24px 16px 0 16px;
+  margin-right: 165px;
+}
+
+.input-bloc {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-row-gap: 32px;
+  margin-bottom: 68px;
+  grid-column-gap: 16px;
+}
+
+p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #545563;
+  margin: 16px 0 8px 0;
+}
+
+.avatar-big img {
+  border-radius: 16px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-upload {
+  height: 44px;
+  width: 80px;
+  border: #4E60FF 1px solid;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.3px;
+  color: #4E60FF;
+  cursor: url("../../assets/Stroke.png"), auto;
+  margin: 0 30px 0 25px;
+}
+
+.custom-upload:hover {
+  background: #F3F4FF;
+}
+
+.avatar-big {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #83859C;
+  text-decoration: none;
+}
+
+.input-bloc label {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #545563;
+  }
+
+.input-bloc input {
+  height: 44px;
+  width: 341px;
+  border-radius: 8px;
+  border: #C7C8D2 1px solid;
+}
+
+.input {
+  display:grid;
+
+}
+
+.checkbox-wrapper{
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  grid-gap: 24px;
+  margin-bottom: 36px;
+}
+
+.checkbox-wrapper label {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #2B2B43;
+}
+
+.email-notification {
+  margin-bottom: 16px;
+}
+
+.checkbox {
+  height: 20px;
+  width: 20px;
+  margin-right: 12px;
+}
+
+.checkbox-cell {
+  display: flex;
+  align-items: center;
+}
+.logout-wrapper {
+  display: inline-grid;
+  grid-template: 1fr / 1fr 1fr;
+  grid-gap: 16px;
+  border-top: #EDEEF2 1px solid;
+  padding: 20px 0;
+}
+
+.logout {
+  height: 44px;
+  width: 80px;
+  border: #FF5C60 1px solid;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.3px;
+  color: #FF5C60;
+  background: #FFFFFF;
+  cursor: url("../../assets/Stroke.png"), auto;
+}
+
+.logout:hover {
+  background: #F3F4FF;
+}
+
+.discard {
+  height: 44px;
+  width: 140px;
+  border: #83859C 1px solid;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.3px;
+  color: #83859C;
+  background: #FFFFFF;
+  cursor: url("../../assets/Stroke.png"), auto;
+  margin-right: 16px;
+}
+
+.discard:hover {
+  background: #F3F4FF;
+}
+
+.save {
+  height: 44px;
+  width: 124px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.3px;
+  color: #FFFFFF;
+  background: #4E60FF;
+  cursor: url("../../assets/Stroke.png"), auto;
+}
+
+.save:hover {
+  opacity: 0.8;
+}
+
+.changes {
+  display: flex;
+  justify-content: end;
+  width: 341px;
+}

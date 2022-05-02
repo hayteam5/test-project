@@ -1,0 +1,147 @@
+<div class="head">
+
+  <div class="logo">
+    <div class="food"><img src="../../assets/food.png" alt=""></div>
+    <div class="delivery"><img src="../../assets/delivery.png" alt=""></div>
+  </div>
+
+  <div class="input-wrapper">
+    <input type="text" placeholder="Search" class="search">
+    <img src="../../assets/search.png">
+  </div>
+
+  <div class="navigation">
+    <a href="" class="restaurant">Restaurant</a>
+    <a href="" class="deals">Deals</a>
+    <a href="" class="order">My orders</a>
+    <div class="shop">
+      <img src="../../assets/shop.png" alt=""> <img src="../../assets/counter.png" class="counter" alt="">
+    </div>
+  </div>
+  <div class="avatar">
+    <img src="../../assets/avatar.png" alt="">
+  </div>
+</div>
+
+<div class="main">
+
+
+
+  <div class="settings">
+    <h2>Settings</h2>
+    <div class="personal panel" tabindex="0">
+      <div class="icon">
+       <img src="assets/personal-icon.png" alt="">
+      </div>
+      <div class="info">
+        <h5>Account</h5>
+        <h6>Personal information</h6>
+      </div>
+    </div>
+
+    <div class="address panel" tabindex="0">
+      <div class="icon">
+        <img src="assets/adress-icon.png"  alt="">
+      </div>
+      <div class="info">
+        <h5>Address</h5>
+        <h6>Shippings addresses</h6>
+      </div>
+    </div>
+
+    <div class="payment panel" tabindex="0">
+      <div class="icon">
+        <img src="assets/payement-icon.png" alt="">
+      </div>
+      <div class="info">
+        <h5>Payment method</h5>
+        <h6>Connected credit cards</h6>
+      </div>
+    </div>
+
+    <div class="security panel" tabindex="0">
+      <div class="icon">
+        <img src="assets/security-icon.png" alt="">
+      </div>
+      <div class="info">
+        <h5>Security</h5>
+        <h6>Password, 2FA</h6>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="account">
+    <h2>Account</h2>
+    <div class="account-container">
+      <h3>Personal information</h3>
+      <form action="" class="personal-information" id="account-form">
+                <p>Avatar</p>
+        <div class="avatar-big">
+          <img src="assets/avatar-big.png" alt="">
+          <label for="avatar" class="custom-upload">Change</label>
+          <input type="file" name="avatar" id="avatar">
+          <a href="">Remove</a>
+        </div>
+
+        <div class="input-bloc">
+          <div class="input">
+            <label for="firstname">First name</label>
+            <input type="text" name="firstname" id="firstname">
+          </div>
+          <div class="input">
+            <label for="lastname">Last name</label>
+            <input type="text" name="lastname" id="lastname">
+          </div>
+          <div class="input">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div class="input">
+            <label for="phone-number">Phone number</label>
+            <input type="tel" name="phone-number" id="phone-number">
+          </div>
+        </div>
+
+        <h3 class="email-notification">Email notifications</h3>
+
+        <div class="checkbox-wrapper">
+          <div class="new-deals checkbox-cell">
+            <input type="checkbox" class="checkbox" id="new-deals">
+            <label for="new-deals">New deals</label>
+          </div>
+          <div class="password-changes checkbox-cell">
+          <input type="checkbox" class="checkbox" id="password-changes">
+          <label for="password-changes">Password changes</label>
+        </div>
+          <div class="new-restaurants checkbox-cell">
+            <input type="checkbox" class="checkbox" id="new-restaurants">
+            <label for="new-restaurants">New restaurants</label>
+          </div>
+          <div class="special-offers checkbox-cell">
+          <input type="checkbox" class="checkbox" id="special-offers">
+          <label for="special-offers">Special offers</label>
+        </div>
+          <div class="order-statuses checkbox-cell">
+            <input type="checkbox" class="checkbox" id="order-statuses">
+            <label for="order-statuses">Order statuses</label>
+          </div>
+          <div class="newsletter checkbox-cell">
+            <input type="checkbox" class="checkbox" id="newsletter">
+            <label for="newsletter">Newsletter</label>
+          </div>
+        </div>
+
+        <div class="logout-wrapper">
+          <button class="logout">Log out</button>
+          <div class="changes">
+            <button class="discard" type="reset" form="account-form">Discard changes</button>
+            <button class="save" type="submit" form="account-form">Save changes</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
