@@ -5,9 +5,10 @@
   padding: 0;
 }
 
-body {
+.page{
   max-height: 860px;
   max-width: 1440px;
+  margin: auto;
 }
 
 .head {

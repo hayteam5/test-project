@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  font-family: Nunito, sans-serif;
+}
+
+@mixin wh($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+%border-tpl{
+  border: 1px solid #C7C8D2;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 640px  800px;
+}
+
+.logo {
+  margin-top: 20px;
+}
+
+.left {
+  @include wh(350px, 860px);
+  padding-left: 165px;
+  padding-right: 515px;
+  grid-column: 1 / 1;
+}
+
+.main {
+  @include wh(350px, '');
+  margin-top: 128px;
+
+  h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 82px;
+   @include wh(350px, 82px);
+    color: #2B2B43;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #545563;
+    margin-bottom: 32px;
+  }
+
+  button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 16px;
+    @include wh('', 44px);
+    left: 165px;
+    top: 602px;
+    background: #4E60FF;
+    box-shadow: 0 8px 20px rgba(78, 96, 255, 0.16);
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 28px;
+  }
+}
+
+.login {
+  display: grid;
+  vertical-align: center;
+
+  label {
+    margin-bottom: 4px;
+  }
+}
+
+input {
+  @extend %border-tpl;
+  box-sizing: border-box;
+  border-radius: 8px;
+  @include wh('', 44px);
+  margin-bottom: 28px;
+  padding: 8px;
+}
+
+#password {
+  background: url("../../assets/eye.png") no-repeat right;
+  background-size: 20px;
+  background-position-x: 97%;
+}
+
+label {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #545563
+}
+
+#checkbox {
+  box-sizing: border-box;
+  border-radius: 4px;
+  @include wh(20px, 20px);
+  float: left;
+  margin: 0;
+}
+
+.checkbox-container {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.checkbox-label {
+  color: #2B2B43;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 12px;
+}
+
+button:hover {
+  opacity: 80%;
+}
+
+.forgot-password {
+  font-weight: 700;
+  line-height: 20px;
+  display: flex;
+  letter-spacing: 0.3px;
+  color: #4E60FF;
+  text-decoration: none;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.footer {
+  color: #545563;
+  text-align: center;
+  margin-top: 106px;
+
+  a {
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #4E60FF;
+    text-decoration: none;
+  }
+}
+
+.right {
+  grid-column: 2 / 2;
+  background: #697BFF;
+  display: grid;
+  grid-template-rows: 570px 290px;
+  @include wh('', 860px);
+
+  h3 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin-top: 68px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  p {
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin: 16px 160px 40px 160px;
+  }
+
+  .footer {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#screen1 {
+  position: absolute;
+  @include wh(618px, 132px);
+  border-radius: 13px;
+  margin: 430px 117px 298px 65px;
+  z-index: 3;
+}
+
+#screen2 {
+  position: absolute;
+  @include wh(313px, 436px);
+  border-radius: 14px;
+  margin: 48px 392px 375px 95px;
+  z-index: 2;
+}
+
+#screen3 {
+  position: absolute;
+  @include wh(294px, 279px);
+  border-radius: 13px;
+  margin: 80px 71px 501px 435px;
+}
+
+.slider {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  button {
+    @include wh(10px, 10px);
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    margin: 0 4px;
+    background: white;
+    opacity: 0.3;
+    padding: 0;
+  }
+
+  button:hover {
+    opacity: 0.5;
+  }
+
+  button:focus {
+    opacity: 1;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .right {
+    display: none;
+  }
+
+  .main {
+    @include wh(330px, '');
+    margin-top: 128px;
+  }
+
+  .left {
+    @include wh(360px, 812px);
+  }
+}

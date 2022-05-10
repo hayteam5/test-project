@@ -395,6 +395,42 @@ a {
 
 .changes {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   width: 341px;
+}
+
+.menu {
+  display: none;
+  min-width: 44px;
+  max-height: 44px;
+  border-radius: 16px;
+  background: #EDEEF2;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (max-width: 400px) {
+  .input-wrapper,
+  .search,
+  .input-wrapper img,
+  .restaurant,
+  .deals,
+  .order
+  {
+    display: none;
+  }
+
+  .head {
+    padding-left: 15px;
+  }
+  .avatar {
+    margin-right: 16px;
+  }
+
+  .menu {
+    display: flex;
+    margin: 3px 16px;
+    border-left: 1px solid #EDEEF2;
+  }
+
 }
