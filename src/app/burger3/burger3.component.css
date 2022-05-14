@@ -135,7 +135,6 @@ body {
 }
 
 .settings {
-  position: absolute;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   display: grid;
@@ -409,7 +408,7 @@ a {
   align-items: center;
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 360px) {
   .input-wrapper,
   .search,
   .input-wrapper img,
@@ -421,7 +420,9 @@ a {
   }
 
   .head {
-    padding-left: 15px;
+    padding: 0;
+    width: 100%;
+    margin: 0;
   }
   .avatar {
     margin-right: 16px;
@@ -431,6 +432,114 @@ a {
     display: flex;
     margin: 3px 16px;
     border-left: 1px solid #EDEEF2;
+    position: relative;
   }
 
+  .menu:before {
+    content: "";
+    width: 1px;
+    height: 32px;
+    background: #EDEEF2;
+    position: absolute;
+    right: 60px;
+  }
+
+  body {
+    margin: 0;
+    padding: 15px;
+    width: 360px;
+  }
+
+  .head {
+    padding: 12px 15px;
+    width: inherit;
+  }
+
+  .settings {
+    display: block;
+    margin: 24px 0 48px 0;
+    padding: 0;
+  }
+
+ .panel {
+    margin: 16px 0;
+   width: inherit;
+  }
+
+  .main {
+    display: block;
+    padding: 0 15px;
+    margin: 0;
+  }
+
+  .account-container {
+    margin: 0;
+    width: inherit;
+  }
+
+  .personal-information {
+    width: inherit;
+  }
+
+  .input-bloc {
+    display: block;
+    width: inherit;
+  }
+
+  .input-bloc input {
+    width: inherit;
+  }
+
+  .input {
+    margin-bottom: 32px;
+    width: inherit;
+  }
+
+  .input-bloc label {
+    margin-bottom: 4px;
+  }
+
+  .checkbox-wrapper {
+    display: block;
+  }
+
+  .checkbox {
+    margin-bottom: 24px;
+  }
+
+  .checkbox-cell {
+    align-items: start;
+  }
+
+  .logout-wrapper {
+    display: block;
+    border: none;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #EDEEF2;
+    width: inherit;
+  }
+
+  .logout {
+    width: 278px;
+    margin: ;
+  }
+
+  .changes {
+    padding-top: 24px;
+    margin-top: 24px;
+    border: none;
+    justify-content: space-between;
+    width: inherit;
+    position: relative;
+  }
+
+  .changes:before {
+    content: "";
+    width: 278px;
+    height: 1px;
+    background: #EDEEF2;
+    position: absolute;
+    top: 0;
+  }
 }
+
