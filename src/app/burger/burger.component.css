@@ -242,11 +242,17 @@ login label {
 
   .main {
     width: 330px;
-    margin-top: 128px;
+    margin-top: 100px;
   }
 
   .left {
     width: 360px;
     height: 812px;
+    margin: 15px;
+    padding: 0;
+  }
+
+  h1 {
+    margin: 16px 0;
   }
 }
